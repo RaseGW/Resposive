@@ -120,7 +120,8 @@ h1 {
     justify-content: end;
     align-items: center;
     padding: 108px 104px;
-    flex: 0.5 1 0;
+    flex: 1 1 0;
+    max-width: 800px;
   }
 
   .sign-up-form {
@@ -137,7 +138,7 @@ h1 {
   }
 
   .sign-up-form {
-    flex: 0.5 1 0;
+    flex: 1 1 0;
   }
 
   .text-fields-container {
