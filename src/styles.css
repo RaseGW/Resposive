@@ -1,0 +1,146 @@
+*::first-letter {
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  font-size: 24px;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  margin-bottom: 82px;
+}
+
+.whole-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.whole-content > * {
+  padding: 100px 42px;
+}
+
+.main-article * {
+  text-align: center;
+}
+
+.background {
+  background-image: url(./assets/images/mobile_horizontal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-self: stretch;
+  background-position: bottom;
+}
+.main-article {
+  display: flex;
+  text-align: end;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  color: white;
+  margin: 0 auto;
+}
+
+.sign-up-form {
+  flex: 1;
+  width: 100%;
+}
+
+.sign-up-form * {
+  font-size: 18px;
+}
+
+.text-fields-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 63px;
+  gap: 40px;
+}
+
+.text-form {
+  flex-grow: 1;
+}
+
+.text-field {
+  border: #c7c7c7 thin solid;
+  background: #ededed;
+  width: 100%;
+}
+
+.text-field,
+.button {
+  height: 65px;
+}
+
+.label-name {
+  margin-bottom: 14px;
+}
+
+.button {
+  background: #5200ff;
+  border: none;
+  padding: 0 40px;
+  color: white;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .background {
+    padding: 108px 65px;
+  }
+
+  .sign-up-form {
+    padding: 65px;
+    padding-top: 100px;
+  }
+
+  .text-fields-container {
+    flex-direction: row;
+  }
+
+  .button {
+    width: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .whole-content {
+    flex-direction: row;
+  }
+  .background {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 108px 104px;
+    flex: 0.5 1 0;
+  }
+
+  .sign-up-form {
+    padding: 108px 104px;
+  }
+
+  .main-article {
+    margin: 0;
+    max-width: 451px;
+  }
+
+  .main-article > * {
+    text-align: end;
+  }
+
+  .sign-up-form {
+    flex: 0.5 1 0;
+  }
+
+  .text-fields-container {
+    flex-direction: column;
+  }
+}
